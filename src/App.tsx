@@ -1,10 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import InputField from "./components/InputField";
 
 const App: React.FC = () => {
 	const [todo, setTodo] = useState<string>("");
+
+	// useEffect(() => {
+	// 	console.log(todo);
+	// }, [todo]);
 
 	return (
 		<div className="App">
